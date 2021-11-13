@@ -1,0 +1,24 @@
+urls:
+  api: 'https://api.elrond.com'
+  swagger:
+    - 'https://microservice.elrond.com'
+    - 'https://devnet-microservice.elrond.com'
+    - 'https://testnet-microservice.elrond.com'
+  redis: '127.0.0.1'
+features:
+  publicApi:
+    enabled: true
+    port: 3000
+  privateApi:
+    enabled: true
+    port: 4000
+  cacheWarmer:
+    enabled: true
+    port: 5201
+  transactionProcessor:
+    enabled: true
+    port: 5202
+    maxLookBehind: 1000
+security:
+  jwtSecret: ''
+  admins:
